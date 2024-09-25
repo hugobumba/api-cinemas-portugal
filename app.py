@@ -7,14 +7,14 @@ load_dotenv()
 
 app = Flask(__name__)
 
-#username = os.getenv('MONGODB_USERNAME')
-#password = os.getenv('MONGODB_PASSWORD')
+username = os.getenv('MONGODB_USERNAME')
+password = os.getenv('MONGODB_PASSWORD')
 database_name = "movies_db"
 collection_name = "movies_info"
 
 # Conectar ao MongoDB Atlas
-#client = MongoClient(f'mongodb+srv://{username}:{password}@cluster0.rkwdb.mongodb.net/{database_name}')
-client = MongoClient('mongodb+srv://hugobumba:mhungo@cluster0.rkwdb.mongodb.net/')
+client = MongoClient(f'mongodb+srv://{username}:{password}@cluster0.rkwdb.mongodb.net/{database_name}')
+#client = MongoClient('mongodb+srv://hugobumba:mhungo@cluster0.rkwdb.mongodb.net/')
 db = client[database_name]
 collection = db[collection_name]
 
