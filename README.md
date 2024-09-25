@@ -1,7 +1,7 @@
 # 🎥 API Cinemas Portugal
 ![image](https://github.com/user-attachments/assets/77c35e5f-62bc-49ec-a4ac-b2a5c61c3297)
 
-- :link: Link on Render: https://api-news-portugal.onrender.com/news](https://api-cinemas-portugal.onrender.com/movies)
+- :link: Link on Render: https://api-cinemas-portugal.onrender.com/movies
 
 
 ## 🔎 Overview
