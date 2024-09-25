@@ -13,7 +13,7 @@ database_name = "movies_db"
 collection_name = "movies_info"
 
 # Conectar ao MongoDB Atlas
-client = MongoClient(f'mongodb+srv://{username}:{password}@cluster0.rkwdb.mongodb.net/{database_name}')
+client = MongoClient(f'mongodb+srv://{username}:{password}@cluster0.rkwdb.mongodb.net/{database_name}?retryWrites=true&w=majority')
 #client = MongoClient('mongodb+srv://hugobumba:mhungo@cluster0.rkwdb.mongodb.net/')
 db = client[database_name]
 collection = db[collection_name]
